@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stallion</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 
+        To Do:
+            Select a background image
+            Select a font to fot background.
+            Background should be two dudes kissing.
+            Possible business names
+                Ebony and Ivory
+                for fat black guys and skinny white guys
+                Stallion
+     -->
+     <!-- 
+        Left side is an image 
+            Has a div nested with opaque background
+                this div contains an image and a company title
+            Footer of background image is a credit to the artist
+        
+            Right side Container div
+                Form with header
+                6 inputs, two buttons at bottom
+                First Name, Last Name
+                Email, Phone Number
+                Password, Confirm password
+                Create account button
+                Log in button
+      -->
+
+      <div class="pageContainer">
+        <div class="pageLeft">
+            <div class="overlay">
+                <div class="logoContainer">
+                    <div class="textBox">Fur Meet</div>
+                </div>
+            </div>
+        </div>
+        <div class="pageRight">
+            2
+            <p class="rightText" id="firstParagraph">RAWR XD UWU! Looks like somebody is a very lonely wolfey! 
+                Looking for a pack to call your own are we? Than fear not! <strong>FurMeet.com</strong> is here to help you find furry love!
+            </p>
+            <p class="rightText" id="secondParagraph">We're here to help you find that mate to create the perfect pack! AWOOOOOOO!</p>
+            <form action="post">
+                <div id="inputContainer">
+                    <h3>CREATE ACCOUNT</h3>
+                    <div id="name" class="divForm">
+                        
+                        <div class="inputWrapper" id="firstInputWrapper">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName" value="John" required>
+                        </div>
+
+                        <div class="inputWrapper" id="firstInputWrapper">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" value="Doe" name="lastName">
+                        </div>
+                </div>
+                    <div id="email" class="divForm">
+                        <div class="inputWrapper">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required id="email">
+                        </div>
+                        <div class="inputWrapper">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                        </div>
+                    </div>
+                    <div id="password" class="divForm">
+                        <div class="inputWrapper">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <div class="inputWrapper">
+                            <label for="confirm">CONFIRM PASSWORD</label required>
+                            <input type="password" id="confirm">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttonWrapper">
+                    <button type="submit">Sign Up</button>
+                    <div>
+                    <label for="logIn">Already a member?</label>
+                    <button type="button">Log in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+</body>
+</html>
