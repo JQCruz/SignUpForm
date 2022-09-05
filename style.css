@@ -1,7 +1,12 @@
+input:invalid:not(:focus):not(:placeholder-shown){
+    border: solid red 2px;
+}
+
+
 
 @font-face{
     font-family: companyFont;
-    src: url(./fonts/BalonkuRegular-la1w.otf);
+    src: url(./fonts/RosmatikaRegular-BWA45.ttf);
 }
 
 @font-face{
@@ -12,7 +17,7 @@
 html{
     --left-side-color: brown;
     --right-side-color: rgb(247, 247, 247);
-    background-color: rgb(49, 39, 39);
+    background: linear-gradient(black,white);
     --left-margin: 3vw;
     --form-color: rgb(255, 255, 255);
     --form-color-shadow: rgb(230, 230, 230);
@@ -26,30 +31,28 @@ body{
     display: flex;
     min-height: auto;
     justify-content: center;
+    width: max(80%, 600px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pageLeft{
     background-image: url("./background-image.jpg");
-    background-position: -350px 0px;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
-    background-size: 1000px 1000px;
+    background-size: 100% 100%;
+    width: 40%;
 }
 
 .pageRight{
     background-color: var(--right-side-color);
+    width: 50%;
 }
 
 html, .pageLeft, .pageRight{
     min-height: 100vh;
 }
 
-.pageLeft{
-    width: clamp(400px, 400px, 25vw);
-}
-
-.pageRight{
-    width: clamp(695px, 695px, 40vw);
-}
 
 /* label,input{
     display: flex;
@@ -70,15 +73,14 @@ html, .pageLeft, .pageRight{
 
 form{
     /* margin-left: var(--left-margin); */
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 .rightText{
-    width: 30vw;
+    width: 80%;
     font-size: 2rem;
     margin-left: var(--left-margin);
-    min-width: 460px;
     font-family: cookieMonster;
 }
 
@@ -97,10 +99,11 @@ form{
 .inputWrapper{
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 input{
-    width: 15vw;
+    width: 100%;
 }
 
 .buttonWrapper{
@@ -119,6 +122,7 @@ div button[type="submit"]{
 }
 div button[type="submit"]:hover{
     cursor: pointer;
+    scale: 1.2;
 }
 
 div button[type="button"]{
@@ -138,23 +142,31 @@ h3{
 
 div button[type="button"]:hover{
     cursor:pointer;
+    scale: 1.2;
 }
 
 
 .logoContainer{
     font-family: companyFont;
-    color: white;
+    color: linear-gradient(blue, red, pink);
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(3.5rem ,4.3rem, 4vw);
 
 }
 
+#one{
+    color: rgba(0, 1, 1, 0%);
+}
+
 .textBox{
-    padding-top: 300px;
+    background-color: var(--form-color-);
+    text-align: center;
+    font-family: companyFont; 
+    font-size: 4rem;
 }
 
 .overlay{
     background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
-    height: 100vh;
-    width: clamp(400px, 400px, 25vw);
+    height: 100%;
+    width: 100%
 }

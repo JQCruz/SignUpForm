@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stallion</title>
+    <title>FurMeet</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -38,12 +38,15 @@
         <div class="pageLeft">
             <div class="overlay">
                 <div class="logoContainer">
-                    <div class="textBox">Fur Meet</div>
+                    <!-- <div id="one">1</div> -->
+                    <!-- <div class="textBox">Fur Meet</div> -->
                 </div>
             </div>
         </div>
         <div class="pageRight">
-            2
+            <div class="textBox">Fur Meet</div>
+
+            
             <p class="rightText" id="firstParagraph">RAWR XD UWU! Looks like somebody is a very lonely wolfey! 
                 Looking for a pack to call your own are we? Than fear not! <strong>FurMeet.com</strong> is here to help you find furry love!
             </p>
@@ -55,33 +58,33 @@
                         
                         <div class="inputWrapper" id="firstInputWrapper">
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" id="firstName" name="firstName" value="John" required>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
                         </div>
 
                         <div class="inputWrapper" id="firstInputWrapper">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" id="lastName" value="Doe" name="lastName">
+                            <input type="text" id="lastName" placeholder="Yiffy" name="lastName">
                         </div>
                 </div>
                     <div id="email" class="divForm">
                         <div class="inputWrapper">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email" required id="email">
+                            <input type="email" name="email" id="email" required id="email" placeholder="EatMyFurryAss@Balls.com">
                         </div>
                         <div class="inputWrapper">
                             <label for="phoneNumber">PHONE NUMBER</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber">
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="2636966969">
                         </div>
                     </div>
                     <div id="password" class="divForm">
                         <div class="inputWrapper">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" required>
+                            <input type="password" id="passwordInput" onchange="check()" name="password" required placeholder="*********" minlength="10">
                         </div>
 
                         <div class="inputWrapper">
-                            <label for="confirm">CONFIRM PASSWORD</label required>
-                            <input type="password" id="confirm">
+                            <label for="confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm" onchange="check()" required placeholder="*************" minlength="10">
                         </div>
                     </div>
                 </div>
@@ -96,5 +99,6 @@
             </form>
         </div>
       </div>
+      <script src="./script.js"></script>
 </body>
 </html>
